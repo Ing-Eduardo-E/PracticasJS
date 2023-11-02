@@ -3,21 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leer HTML con JS</title>
+    <title>Operacones con JS</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header>
-      <h1>Operaciones matemáticas</h1>
+      <h1>Operadores Matemáticos</h1>
     </header>
     <main class="container__main">
-      <section>
-        <label for="input1">Ingrese el primer valor:</label>
-        <input type="text" id="calculo1" placeholder="Enter first value" />
-
-        <label for="input2">Ingrese el segundo valor:</label>
-        <input type="text" id="calculo2" placeholder="Enter second value" />
-
-        <button type="button" id="btnCalcular">Calculate</button>
+      <section class="main__section">
+        <div class="section__div--valores">
+          <label class="div__labels" for="input1">Valor 1:</label>
+          <input class="inputs" type="number" id="calculo1" placeholder="Número" />
+  
+          <label class="div__labels" for="input2">Valor 2:</label>
+          <input class="inputs" type="number" id="calculo2" placeholder="Número" />
+        </div>
+        <div section__div--botones>
+          <div class="div__button">
+            <button class="div__buttons" type="button" id="btnSuma">Suma</button>
+          </div>
+          <div class="div__button">
+            <button class="div__buttons" type="button" id="btnResta">Resta</button>
+          </div>
+          <div class="div__button">
+            <button class="div__buttons" type="button" id="btnMultiplicación">Multiplicación</button>
+          </div>
+          <div class="div__button">
+            <button class="div__buttons" type="button" id="btnDivisión">División</button>
+          </div>
+        </div>
+        <div section__div--resultado>
+          <p id="resultado"></p>
+        </div>
         <script src="./js/index.js"></script>
       </section>
     </main>
