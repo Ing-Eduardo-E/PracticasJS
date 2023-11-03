@@ -1,0 +1,71 @@
+/* Este archivo contiene estilos CSS para resetear los valores por defecto de los elementos HTML y establecer un conjunto de reglas comunes para mejorar la consistencia visual en el sitio web. */
+
+/* Resetear valores por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* Establecer box-sizing */
+*,
+* ::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Establecer scroll-behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Establecer reglas comunes para el body */
+body {
+  min-height: none;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Establecer reglas comunes para listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Establecer reglas comunes para enlaces */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Establecer reglas comunes para enlaces dentro de párrafos */
+p a {
+  display: inline;
+}
+
+/* Establecer reglas comunes para elementos multimedia */
+img,
+video,
+iframe,
+picture,
+figure {
+  max-width: 100%;
+  display: block;
+}
+
+/* Establecer reglas comunes para formularios */
+form,
+input,
+select,
+textarea,
+button,
+label {
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}

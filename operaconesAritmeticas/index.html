@@ -4,40 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Operacones con JS</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <header>
-      <h1>Operadores Matemáticos</h1>
+  <body class="container">
+    <header class="container__header">
+      <h1 class="header__title">Operadores Matemáticos</h1>
     </header>
     <main class="container__main">
-      <section class="main__section">
-        <div class="section__div--valores">
-          <label class="div__labels" for="input1">Valor 1:</label>
-          <input class="inputs" type="number" id="calculo1" placeholder="Número" />
-  
-          <label class="div__labels" for="input2">Valor 2:</label>
-          <input class="inputs" type="number" id="calculo2" placeholder="Número" />
-        </div>
-        <div section__div--botones>
-          <div class="div__button">
-            <button class="div__buttons" type="button" id="btnSuma">Suma</button>
-          </div>
-          <div class="div__button">
-            <button class="div__buttons" type="button" id="btnResta">Resta</button>
-          </div>
-          <div class="div__button">
-            <button class="div__buttons" type="button" id="btnMultiplicación">Multiplicación</button>
-          </div>
-          <div class="div__button">
-            <button class="div__buttons" type="button" id="btnDivisión">División</button>
-          </div>
-        </div>
-        <div section__div--resultado>
-          <p id="resultado"></p>
-        </div>
+      <div class="main__container">
+        <section class="section__input-group">
+          <label class="input__label" for="input1">Valor 1:</label>
+          <input
+            class="input__field"
+            type="number"
+            id="calculo1"
+            placeholder="Número"
+          />
+          <label class="input__label" for="input2">Valor 2:</label>
+          <input
+            class="input__field"
+            type="number"
+            id="calculo2"
+            placeholder="Número"
+          />
+        </section>
+        
+        <section class="results">
+          <p class="result" id="result"></p>
+        </section>
+
+        <section class="btn-group">
+          <button class="btn" type="button" id="btnSuma">Suma</button>
+
+          <button class="btn" type="button" id="btnResta">Resta</button>
+
+          <button class="btn" type="button" id="btnMultiplicación">
+            Multiplicación
+          </button>
+          <button class="btn" type="button" id="btnDivisión">División</button>
+        </section>
         <script src="./js/index.js"></script>
-      </section>
+      </div>
     </main>
   </body>
 </html>
